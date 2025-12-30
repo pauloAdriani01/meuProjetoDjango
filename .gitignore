@@ -1,0 +1,8 @@
+#Banco de Dados Local sendo Ignorado
+db.sqlite3
+
+#Arquivos Temporários Geraados pelo Django
+**/__pycache__/
+
+#Arquivos de Configurações do VSCode
+.vscode/
