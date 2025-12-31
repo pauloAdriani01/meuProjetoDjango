@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+#Apps instalados no meu projeto Django
+#APP -> Aplicação com uma função específica dentro do projeto
+
+#Migrate -> migração de novos modelos (tabelas) para o banco de dados
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
