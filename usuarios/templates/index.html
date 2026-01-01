@@ -1,0 +1,11 @@
+{% extends 'master.html' %}
+
+{% block title %}
+    Index do Site
+{% endblock %}
+
+{% block content %}
+    <h1>Bem-vindo ao Site!</h1>
+    <p>Confira a <a href="{% url 'usuarios' %}">lista de usuários</a> cadastrados</p>
+
+{% endblock %}

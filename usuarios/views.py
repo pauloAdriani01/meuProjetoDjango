@@ -40,4 +40,9 @@ def detalhes(request, id):
 
     return HttpResponse(template.render(context, request))
 
+def index(request):
+    template = loader.get_template('index.html')
+
+    return HttpResponse(template.render())
+
 

@@ -6,7 +6,8 @@ from . import views #Importa o módulo views do diretório atual
 urlpatterns = [
     #Define a rota /usuarios que chama a função usuarios na views.py
     #Com um caminho vazio, ele mostra a view automaticamente
-    path('', views.usuarios, name='usuarios'),
-    path('detalhes/<int:id>/', views.detalhes, name='detalhes'),
+    path('', views.index, name='index'),
+    path('usuarios/', views.usuarios, name='usuarios'),
+    path('detalhes/<int:id>/', views.detalhes, name='detalhes')
 
 ]

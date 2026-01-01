@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Site - Lista de Usuários</title>
-</head>
-<body>
+{% extends 'master.html' %}
+
+{% block title %}
+    Lista de Usuários
+
+{% endblock %}
+
+{% block content %}
     <h1>Usuários Ativos no Site:</h1>
 
     <h2>Aqui, todos os usuários cadastrados estão listados</h2>
@@ -14,9 +13,11 @@
     <ul>
         <!-- Tags do Django para fazerem alguma lógica -->
         {% for usuario in usuarios %}
-            <li><a href="detalhes.html">{{ usuario.nome }} - {{ usuario.idade }} anos</a></li>
+            <!--href no padrão django-->
+            <li><a href="{% url 'detalhes' usuario.id %}">{{ usuario.nome }} - {{ usuario.idade }} anos</a></li>
         {% endfor %}
     </ul>
 
-</body>
-</html>
+    <p><a href="{% url 'index' %}">Voltar à página inicial</a></p>
+
+{% endblock %}
