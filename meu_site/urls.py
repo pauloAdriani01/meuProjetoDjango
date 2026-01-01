@@ -27,6 +27,6 @@ from django.urls import include, path
 urlpatterns = [
     #Rota raiz do site, que inclui as URLs definidas no aplicativo 'usuarios'
     path('', include('usuarios.urls')), 
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls)
     
 ]

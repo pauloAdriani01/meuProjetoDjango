@@ -7,3 +7,6 @@ from django.db import models
 class Usuario(models.Model):
     nome = models.CharField(max_length=100)
     idade = models.IntegerField()
+    #auto_now_add define que a data será preenchida automaticamente com a data atual na criação do objeto
+    #null=True permite que o campo seja nulo no banco de dados
+    dataCriacao = models.DateField(auto_now_add=True, null=True)
