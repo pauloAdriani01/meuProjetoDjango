@@ -4,12 +4,15 @@
 Detalhes do Usuário
 {% endblock %}
 
-{% block content%}   
-    <h1>Detalhes do Usuário: {{ usuario.nome }}</h1>
+{% block content%}
 
-    <p>Idade: {{ usuario.idade }}</p>
-    <p>Data de Criação: {{ usuario.data_criacao }}</p>
+    <div>
+        <h1>Detalhes do Usuário: {{ usuario.nome }}</h1>
 
-    <p>Voltar a <a href="{% url 'usuarios' %}">Lista de Usuários</a></p>
+        <p>Idade: {{ usuario.idade }}</p>
+        <p>Data de Criação: {{ usuario.dataCriacao }}</p>
+
+        <p>Voltar a <a href="{% url 'usuarios' %}">Lista de Usuários</a></p>
+    </div>
 
 {% endblock %}

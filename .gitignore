@@ -7,3 +7,6 @@ db.sqlite3
 
 #Arquivos de Configurações do VSCode
 .vscode/
+
+# Arquivos estáticos coletados
+arquivos_producao/
